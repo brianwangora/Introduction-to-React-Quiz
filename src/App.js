@@ -12,12 +12,19 @@ const users = [
   { name: "Billy Doe", id: 3 }
 ];
 
+const usersList = users.map((user) => (
+  <li key={user.id}>{user.name}</li>
+))
+
+
 // comment this out after completion and uncomment code below it to proceed
-function Child() {
-  return <div>This is children content</div>;
-}
-/**
+// function Child() {
+//   return <div>This is children content</div>;
+// }
+
+/*
   Challenge: Uncomment this code to complete quiz
+*/  
 
 function Child() {
   return (
@@ -47,17 +54,19 @@ function Parent() {
     </>
   );
 }
+
+/** 
 Uncomment this to tackle quiz
 **/
 
 // Comment out after completion
-function Parent() {
-  return (
-    <div>
-      <h3>Parent Component</h3>
-    </div>
-  );
-}
+// function Parent() {
+//   return (
+//     <div>
+//       <h3>Parent Component</h3>
+//     </div>
+//   );
+// }
 // Comment above code after completion
 
 function App() {
@@ -66,9 +75,10 @@ function App() {
     
     <>
     
-    <img src={logo} className="App-logo" alt="logo" />
+    <img src={"https://images.unsplash.com/photo-1558907530-b6ac430f8a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFtdXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60"} className="App-logo" alt="lamu" />
+    <p>JSX is cool!</p>
       <h3>User names</h3>
-      <ul></ul>
+      <ul>{usersList}</ul>
       <button>Hide Element Below</button>
 
       <div>Toggle Challenge</div>
